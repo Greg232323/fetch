@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: rgb(54, 44, 44);
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  margin: auto;
+}
+
+li {
+  color: white;
+  font-size: 1.7rem;
+}
+
+h1 {
+  color: white;
+  font-size: 4.5rem;
+}
+
+/*====================
+    Hamburger / Nav
+============================*/
+/*nav {
+    position: absolute;    
+}*/
+
+a {
+  display: inline-block;
+  padding: 15px;
+  margin: 5px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  color: orangered;
+  background-color: #fff;
+  transform: scale(1.25);
+}
+
+header {
+  position: relative;
+}
+
+button {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  z-index: 1;
+}
+
+.fa-bars {
+  position: sticky;
+  padding: 10px;
+  color: orangered;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.hide {
+  display: none;
+}
+
+/*====================
+LE BACKGROUND VIDEO & TITRE
+============================*/
+
+.banner {
+  position: relative;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(44, 53, 45, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+/*************** Page : SEARCH *************/
+.bg-search {
+  width: 100%;
+  height: 100%;
+}
+
+h2,
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+li img {
+  width: 10%;
+}
+
+/* Style de la fonction formattingQuery ()*/
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.movies-container li {
+  list-style: none;
+}
+
+.movie-card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 20vw;
+  min-height: 60vh;
+  margin: 5px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  transition: transform 0.8s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(8, 206, 35, 0.2);
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+}
+
+.movie-title {
+  font-size: 2rem;
+  margin: 10px 0;
+  padding: 0 4px 0 4px;
+}
+
+.movie-description {
+  font-size: 1.6rem;
+  padding: 0 10px 20px;
+}
+
+.movie-popularity,
+.movie-avg {
+  color: rgb(199, 233, 9);
+  padding: 4px 0 10px 0;
+}
+
+p {
+  padding: 10px;
+}
+
+/***** les icons film et calculator */
+.container-icons {
+  display: inline-block;
+}
+
+.fa-film,
+.fa-calculator {
+  margin: 10px 10px 0px;
+  padding: 20px;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.fa-film {
+  color: yellow;
+}
+
+.fa-calculator {
+  color: rgb(52, 189, 253);
+}
+
+/* Animation PopUp sur Icons calculator */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+aside p {
+  font-size: 4.5rem;
+}
+
+.counter {
+  color: orangered;
+}
+
+/* Animation input sur Icons movies */
+.search-container {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+}
+
+/* Style pour le champ de recherche */
+#search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #f80202;
+  border-radius: 5px;
+}
+
+/* Style pour les résultats de recherche */
+#search-results {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+#search-results li {
+  padding: 10px;
+}
+
